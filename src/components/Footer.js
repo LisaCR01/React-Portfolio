@@ -1,10 +1,14 @@
 import React from 'react';
+import { BsGithub } from "react-icons/bs";
+import { BsLinkedin } from "react-icons/bs";
+
 
 function Footer() {
   return (
-    <div>
-       footer
-    </div>
+      <div>
+          <BsGithub/>
+          <BsLinkedin/>
+      </div>
   );
 }
 

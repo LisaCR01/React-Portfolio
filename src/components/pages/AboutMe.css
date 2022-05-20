@@ -5,3 +5,7 @@
 .card-title {
     color: rgb(63, 57, 84);
 }
+
+.img-fluid :hover {
+    opacity: 0.5;
+}

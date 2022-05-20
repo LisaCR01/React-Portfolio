@@ -6,10 +6,10 @@ export default function Resume() {
         <div className="container">
         <div className="row justify-content-center">
         <div className="col-md-4">
-        <div className="card mt-3">
+        <div className="card my-5">
             <div className="card-body">
               <h5 className="card-title fs-4">Front-end Proficiencies</h5>
-              <ul className="card-text fs-6">
+              <ul className="card-text fs-5">
                 <li>HTML</li>
                 <li>CSS</li>
                 <li>JavaScript</li>
@@ -25,12 +25,12 @@ export default function Resume() {
         </div>
         <div className="col-md-4">
           <div>
-            <a className='btn btn-secondary my-3 fs-4' href={Pdf} target = "_blank" >Downloadable Resume</a>
+            <a className='btn btn-secondary mt-5 mb-4 fs-4' href={Pdf} target = "_blank" >Downloadable Resume</a>
           </div>
           <div className="card">
             <div className="card-body">
               <h5 className="card-title fs-4">Back-end Proficiencies</h5>
-              <ul className="card-text fs-6">
+              <ul className="card-text fs-5">
                 <li>API</li>
                 <li>Node</li>
                 <li>Express</li>

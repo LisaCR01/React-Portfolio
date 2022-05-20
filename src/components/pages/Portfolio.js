@@ -9,7 +9,7 @@ import { BsGithub } from "react-icons/bs";
 
 export default function Portfolio() {
     return (
-        <div className="container">
+        <div className="container mt-5">
         <div className="row align-items-center">
             <div className="text-center col ">
                 <div className="card m-2">
@@ -21,7 +21,7 @@ export default function Portfolio() {
                         </a>
                       </div>
                     </div>
-                    <a href="https://fierce-dawn-38653.herokuapp.com/">
+                    <a className="image" href="https://fierce-dawn-38653.herokuapp.com/">
                         <img className="img-fluid" src={jate} alt="Image of a code editor."/>
                     </a>
                 </div>

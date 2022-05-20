@@ -51,36 +51,54 @@ function Form() {
   };
 
   return (
-    <div>
+    <div className="card m-5">
+     <div className="card-body p-5">
       <form className="form">
-        <input
-          value={email}
-          name="email"
-          onChange={handleInputChange}
-          type="email"
-          placeholder="email"
-        />
-        <input
-          value={userName}
-          name="userName"
-          onChange={handleInputChange}
-          type="text"
-          placeholder="username"
-        />
-        <input
-          value={message}
-          name="message"
-          onChange={handleInputChange}
-          type="message"
-          placeholder="message"
-        />
-        <button type="button" onClick={handleFormSubmit}>Submit</button>
+          <div className="mb-3">
+              <label for="exampleFormControlInput1" className="form-label">Email address</label>
+              <input
+                value={email}
+                name="email"
+                onChange={handleInputChange}
+                type="email"
+                placeholder="email"
+                id="exampleFormControlInput1"
+                className="form-control"
+              />
+          </div>
+         <div className="mb-3">
+             <label for="exampleFormControlInput2" className="form-label">Name</label>
+             <input
+                value={userName}
+                name="userName"
+                onChange={handleInputChange}
+                type="text"
+                placeholder="username"
+                id="exampleFormControlInput2"
+                className="form-control"
+
+            />
+        </div>
+        <div className="mb-3">
+            <label for="exampleFormControlTextarea1" className="form-label">Name</label>
+            <input
+                value={message}
+                name="message"
+                onChange={handleInputChange}
+                type="message"
+                placeholder="message"
+                id="exampleFormControlTextarea1"
+                className="form-control"
+             />
+        </div>
+        <button className="btn btn-secondary" type="button" onClick={handleFormSubmit}>Submit</button>
       </form>
       {errorMessage && (
         <div>
           <p className="error-text">{errorMessage}</p>
         </div>
       )}
+      </div>
     </div>
   );
 }

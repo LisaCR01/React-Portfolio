@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 // Here we import a helper function that will check if the email is valid
-import { checkPassword, validateEmail } from '../utils/helpers';
+import { validateEmail } from '../utils/helpers';
 
 function Form() {
   // Create state variables for the fields in the form
@@ -9,7 +9,6 @@ function Form() {
   const [email, setEmail] = useState('');
   const [userName, setUserName] = useState('');
   const [message, setMessage] = useState('')
-  const [password, setPassword] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
 
   const handleInputChange = (e) => {
@@ -47,13 +46,12 @@ function Form() {
 
     // If everything goes according to plan, we want to clear out the input after a successful registration.
     setUserName('');
-    setPassword('');
     setMessage('');
+    setEmail('')
   };
 
   return (
     <div>
-      <p>Hello {userName}</p>
       <form className="form">
         <input
           value={email}

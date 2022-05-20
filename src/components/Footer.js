@@ -6,7 +6,7 @@ import { BsFacebook } from "react-icons/bs";
 
 function Footer() {
   return (
-<footer className="container m-0 text-center ">
+<footer className="container m-0 text-center p-4">
     <div className="row">
         <div className="col-md-4">
         <a className="link-secondary fa-lg p-4" href="https://github.com/LisaCR01">

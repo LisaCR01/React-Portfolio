@@ -7,110 +7,93 @@ import note from "./Assets/Note-Taker.jpeg";
 import weather from "./Assets/Weather-Dashboard.jpeg";
 import { BsGithub } from "react-icons/bs";
 
-export default function Portfolio() {
-    return (
-        <div className="container mt-5">
-            <header className="card-title fs-4 ms-3 py-2 text-center fw-bold">Portfolio</header>
-        <div className="row align-items-center">
-            <div className="text-center col ">
-                <div className="card m-2">
-                    <div className="card-body">
-                      <h5 className="card-title">Text Editor</h5>
-                      <div>
-                        <a className="link-light" href="https://github.com/LisaCR01/Text-Editor.git">
-                          <BsGithub size={25}/>
-                        </a>
-                      </div>
-                    </div>
-                    <div>
-                        <a href="https://fierce-dawn-38653.herokuapp.com/">
-                            <img className="img-fluid hoverable" src={jate} alt="Image of a code editor."/>
-                         </a>
-                         <div className="overlay">
-                            {/* <div className="image-text">Hello</div> */}
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div className="text-center col">
-                <div className="card card m-2">
-                    <div className="card-body">
-                      <h5 className="card-title">Mood Tracker</h5>
-                      <div>
-                          <a className="link-light" href="https://github.com/GrantRT/Mood-Tracker.git">
-                          <BsGithub size={25}/>
-                          </a>
-                    </div>
-                    </div>
-                    <a href="https://mood-tracker-gkl.herokuapp.com/">
-                        <img className="img-fluid" src={mood} alt="Image of application which has graph to track your mood over the week."/>
-                    </a>
-                </div>
-            </div>
-            <div className="text-center col">
-                <div className="card m-2">
-                    <div className="card-body">
-                      <h5 className="card-title">Daily Planner</h5>
-                      <div>
-                        <a className="link-light" href="https://github.com/LisaCR01/Daily-Planner.git">
-                        <BsGithub size={25}/>
-                        </a>
-                      </div>
-                    </div>
-                    <a href="https://lisacr01.github.io/Daily-Planner/">
+var ProjectsData=[
+  {title:"Text Editor",
+  gitlink:"https://github.com/LisaCR01/Text-Editor.git",
+  deploylink:"https://fierce-dawn-38653.herokuapp.com/",
+  img:jate,
+  altext:"Image of a code editor."},
+  {
+  title:"Mood Tracker",
+  gitlink:"https://github.com/GrantRT/Mood-Tracker.git",
+  deploylink:"https://mood-tracker-gkl.herokuapp.com/",
+  img:mood,
+  altext:"Image of application which has graph to track your mood over the week."
+  },
+  {title:"Daily Planner",
+  gitlink:"https://github.com/LisaCR01/Daily-Planner.git",
+  img:daily,
+altext:"Image of a daily planner application that is colour co-ordinated to whether times are in the: past, present or future."
+  },
+  {title:"Note Taker",
+gitlink:"https://github.com/LisaCR01/Note-Taker.git",
+deploylink:"https://limitless-brook-10698.herokuapp.com/",
+img:note,
+alttext:"Image of an application that can be used to write and save notes."},
+{title:"City Health",
+gitlink:"https://github.com/DYL4N1997/City-Health.git",
+deploylink:"https://dyl4n1997.github.io/City-Health/",
+img:health,
+altext:"Image of an application to determine a city's health."},
+{title:"Weather Dashboard",
+gitlink:"https://github.com/LisaCR01/Weather-Dashboard.git",
+deploylink:"https://lisacr01.github.io/Weather-Dashboard/",
+img:weather,
+altext:"Image of an application which for a searched place gives the current weather and a five day forecast."}
+]
 
-                        <img className="img-fluid" src={daily} alt="Image of a daily planner application that is colour co-ordinated to whether times are in the: past, present or future."/>
-                     </a>
-                </div>
+class SingleProject extends React.Component {
+  render () {
+      return (
+        <div className="text-center col ">
+        <div className="card m-2">
+            <div className="card-body">
+              <h5 className="card-title">{this.props.title}</h5>
+              <div className="card-text">
+                <a className="link-light" href={this.props.gitlink} >
+                  <BsGithub size={25}/>
+                </a>
+              </div>
             </div>
-          </div>
-          <div className="row align-items-center">
-            <div className="text-center col ">
-                <div className="card m-2">
-                    <div className="card-body">
-                      <h5 className="card-title">Note Taker</h5>
-                      <div>
-                        <a className="link-light" href="https://github.com/LisaCR01/Note-Taker.git">
-                        <BsGithub size={25}/>
-                        </a>
-                      </div>
-                    </div>
-                    <a href="https://limitless-brook-10698.herokuapp.com/">
-                        <img className="img-fluid" src={note} alt="Image of an application that can be used to write and save notes."/>
-                     </a>
-                </div>
-            </div>
-            <div className="text-center col">
-                <div className="card m-2">
-                    <div className="card-body">
-                      <h5 className="card-title">City Health</h5>
-                      <div>
-                        <a className="link-light" href="https://github.com/DYL4N1997/City-Health.git">
-                        <BsGithub size={25}/>
-                        </a>
-                      </div>
-                    </div>
-                    <a href="https://dyl4n1997.github.io/City-Health/">
-                        <img className="img-fluid" src={health} alt="Image of an application that can be used to write and save notes."/>
-                    </a>
-                </div>
-            </div>
-            <div className="text-center col">
-                <div className="card m-2">
-                    <div className="card-body">
-                      <h5 className="card-title">Weather Dashboard</h5>
-                      <div>
-                        <a className="link-light" href="https://github.com/LisaCR01/Weather-Dashboard.git">
-                        <BsGithub size={25} />
-                        </a>
-                      </div>
-                    </div>
-                    <a href="https://lisacr01.github.io/Weather-Dashboard/">
-                        <img className="img-fluid" src={weather} alt="Image of an application which for a searched place gives the current weather and a five day forecast."/>
-                    </a>
-                </div>
-            </div>
-          </div>
-          </div>
+            <a className="image" href={this.props.deploylink}>
+                <img className="img-fluid" src={this.props.img} alt={this.props.alttext}/>
+            </a>
+        </div>
+        </div>
+      )
+}
+}
+class SingleProjectWrapper extends React.Component {
+  render () {
+      var projects = [];
+      this.props.projects.forEach(function(project, i){
+          projects.push(<SingleProject title={project.title}  
+                           gitlink={project.gitlink}
+                           deploylink={project.deploylink}
+                           img={project.img}
+                           alttext={project.alttext}
+                           key={i} />);
+      });
+      return (
+        <div className="container mt-5">
+        <div className="row align-items-center">{projects[0]}{projects[1]}{projects[2]}</div>
+        <div className="row align-items-center">{projects[3]}{projects[4]}{projects[5]}
+        </div></div>
+       
+              
+              
+      
+      )
+  }
+}
+class Portfolio extends React.Component {
+  render () {
+    return (
+      <div>
+            <SingleProjectWrapper projects={ProjectsData} />
+       
+        </div>
     );
   }
+}
+  export default Portfolio;

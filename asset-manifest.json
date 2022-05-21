@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/react-portfolio/static/css/main.8e9dbc0d.css",
+    "main.js": "/react-portfolio/static/js/main.a2e0cb87.js",
+    "static/media/City-Health.jpeg": "/react-portfolio/static/media/City-Health.175af4032f01c66e074a.jpeg",
+    "static/media/Mood-Tracker.jpeg": "/react-portfolio/static/media/Mood-Tracker.9c1c7839a99786cd4e15.jpeg",
+    "static/media/Daily-Planner.jpeg": "/react-portfolio/static/media/Daily-Planner.e35880ae929b02401b4f.jpeg",
+    "static/media/Photo-Me.jpeg": "/react-portfolio/static/media/Photo-Me.41325fef5797d54d9d6a.jpeg",
+    "static/media/Weather-Dashboard.jpeg": "/react-portfolio/static/media/Weather-Dashboard.2e5fe79bc84d5514e601.jpeg",
+    "static/media/LisaCRGunn.pdf": "/react-portfolio/static/media/LisaCRGunn.8be4c1c885deb743ad00.pdf",
+    "static/media/Note-Taker.jpeg": "/react-portfolio/static/media/Note-Taker.be22b1ca4da298cd4c79.jpeg",
+    "static/media/Jate.jpeg": "/react-portfolio/static/media/Jate.31984404c1deabbd3032.jpeg",
+    "index.html": "/react-portfolio/index.html",
+    "main.8e9dbc0d.css.map": "/react-portfolio/static/css/main.8e9dbc0d.css.map",
+    "main.a2e0cb87.js.map": "/react-portfolio/static/js/main.a2e0cb87.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8e9dbc0d.css",
+    "static/js/main.a2e0cb87.js"
+  ]
+}

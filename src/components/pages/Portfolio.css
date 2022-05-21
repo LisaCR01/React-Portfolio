@@ -1,0 +1,12 @@
+.img-fluid:hover {
+    opacity: 0.4
+  }
+  
+.image-text {
+    opacity: 0;
+    font-size: 16px;
+    padding: 16px 32px;
+}
+  .image-text:hover {
+    opacity: 1;
+  }

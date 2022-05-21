@@ -6,6 +6,7 @@ import mood from "./Assets/Mood-Tracker.jpeg";
 import note from "./Assets/Note-Taker.jpeg";
 import weather from "./Assets/Weather-Dashboard.jpeg";
 import { BsGithub } from "react-icons/bs";
+import './Portfolio.css'
 
 export default function Portfolio() {
     return (
@@ -21,9 +22,14 @@ export default function Portfolio() {
                         </a>
                       </div>
                     </div>
-                    <a className="image" href="https://fierce-dawn-38653.herokuapp.com/">
-                        <img className="img-fluid" src={jate} alt="Image of a code editor."/>
-                    </a>
+                    <div>
+                        <a href="https://fierce-dawn-38653.herokuapp.com/">
+                            <img className="img-fluid hoverable" src={jate} alt="Image of a code editor."/>
+                         </a>
+                         <div className="overlay">
+                            {/* <div className="image-text">Hello</div> */}
+                        </div>
+                    </div>
                 </div>
             </div>
             <div className="text-center col">

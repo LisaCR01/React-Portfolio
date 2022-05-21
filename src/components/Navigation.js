@@ -7,7 +7,7 @@ function Navigation({ currentPage, handlePageChange }) {
   return (
     <div className="navbar navbar-expand-lg py-4 shadow-lg">
     <div className="container-fluid ">
-    <div className ="px-4 fw-light fs-2 text  navbar-brand">Portfolio - Lisa Gunn</div>
+    <div className ="px-4 fw-light fs-2 text navbar-brand">Portfolio - Lisa Gunn</div>
     <ul className="navbar-nav me-auto mb-2 mb-lg-0">
       <li className="nav-item px-4 fw-bold fs-4 nav-link text-muted">
         <a 

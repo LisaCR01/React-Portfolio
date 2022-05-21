@@ -11,6 +11,17 @@ SO THAT I can assess whether they're a good candidate for an open position
 ```
 
 ## Technologies
+
+- React
+- HTML
+- Bootstrap
+- Custom CSS
+- Node.js
+- JSON
+- JavaScript
+- JSX
+
+
 ## Criteria met to achieve this
 GIVEN a single-page application portfolio for a web developer
 WHEN I load the portfolio

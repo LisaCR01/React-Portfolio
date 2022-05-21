@@ -38,9 +38,9 @@ SO THAT I can assess whether they're a good candidate for an open position
 - The footer contains icon links to my Github, LinkedIn and another platform's profiles (in my case Facebook).
 
 ## Deployed Application
+[Deployed Application](https://lisacr01.github.io/React-Portfolio/)
 
 ### Github Repository
-
 [Link to Github Repository](https://github.com/LisaCR01/React-Portfolio.git)
 
 ### Screenshot of Application

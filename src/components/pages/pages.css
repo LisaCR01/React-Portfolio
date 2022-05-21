@@ -1,0 +1,33 @@
+.card-body {
+    background-color: rgb(201, 181, 210);
+}
+
+.card-title,.mt-4 {
+    color: rgb(63, 57, 84);
+}
+
+.card-text {
+ background-color:  rgb(224, 206, 233);
+}
+
+.mb-0 {
+    background-color: rgb(201, 211, 232);
+}
+
+.form-label {
+    color: rgb(63, 57, 84);
+}
+
+.img-fluid:hover {
+    opacity: 0.4
+  }
+  
+.image-text {
+    opacity: 0;
+    font-size: 16px;
+    padding: 16px 32px;
+}
+  .image-text:hover {
+    opacity: 1;
+  }
+

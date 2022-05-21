@@ -6,17 +6,17 @@ import mood from "./Assets/Mood-Tracker.jpeg";
 import note from "./Assets/Note-Taker.jpeg";
 import weather from "./Assets/Weather-Dashboard.jpeg";
 import { BsGithub } from "react-icons/bs";
-import './Portfolio.css'
 
 export default function Portfolio() {
     return (
         <div className="container mt-5">
+            <header className="card-title fs-4 ms-3 py-2 text-center fw-bold">Portfolio</header>
         <div className="row align-items-center">
             <div className="text-center col ">
                 <div className="card m-2">
                     <div className="card-body">
                       <h5 className="card-title">Text Editor</h5>
-                      <div className="card-text">
+                      <div>
                         <a className="link-light" href="https://github.com/LisaCR01/Text-Editor.git">
                           <BsGithub size={25}/>
                         </a>
@@ -36,7 +36,7 @@ export default function Portfolio() {
                 <div className="card card m-2">
                     <div className="card-body">
                       <h5 className="card-title">Mood Tracker</h5>
-                      <div className="card-text">
+                      <div>
                           <a className="link-light" href="https://github.com/GrantRT/Mood-Tracker.git">
                           <BsGithub size={25}/>
                           </a>

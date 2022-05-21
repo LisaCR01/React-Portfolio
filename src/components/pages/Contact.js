@@ -42,6 +42,8 @@ function Form() {
         setErrorMessage('Please enter the fields');
         return; 
       }
+
+    
     
 
     // If everything goes according to plan, we want to clear out the input after a successful registration.
@@ -50,12 +52,14 @@ function Form() {
     setEmail('')
   };
 
+
   return (
     <div className="card m-5">
-     <div className="card-body p-5">
-      <form className="form">
+     <div className="card-body ">
+         <header className="text-center card-title fs-4 ms-3 pb-4 fw-bold">Contact</header>
+      <form className="form mb-0 p-3 shadow-lg">
           <div className="mb-3">
-              <label for="exampleFormControlInput1" className="form-label">Email address</label>
+              <label for="exampleFormControlInput1" className="form-label fs-5">Email address</label>
               <input
                 value={email}
                 name="email"
@@ -63,11 +67,11 @@ function Form() {
                 type="email"
                 placeholder="email"
                 id="exampleFormControlInput1"
-                className="form-control"
+                className="form-control shadow-lg"
               />
           </div>
          <div className="mb-3">
-             <label for="exampleFormControlInput2" className="form-label">Name</label>
+             <label for="exampleFormControlInput2" className="form-label fs-5">Name</label>
              <input
                 value={userName}
                 name="userName"
@@ -75,12 +79,12 @@ function Form() {
                 type="text"
                 placeholder="username"
                 id="exampleFormControlInput2"
-                className="form-control"
+                className="form-control shadow-lg"
 
             />
         </div>
         <div className="mb-3">
-            <label for="exampleFormControlTextarea1" className="form-label">Name</label>
+            <label for="exampleFormControlTextarea1" className="form-label fs-5">Message</label>
             <input
                 value={message}
                 name="message"
@@ -88,10 +92,10 @@ function Form() {
                 type="message"
                 placeholder="message"
                 id="exampleFormControlTextarea1"
-                className="form-control"
+                className="form-control shadow-lg"
              />
         </div>
-        <button className="btn btn-secondary" type="button" onClick={handleFormSubmit}>Submit</button>
+        <button className="btn btn-secondary my-3 fs-4 shadow-lg" type="button" onClick={handleFormSubmit}>Submit</button>
       </form>
       {errorMessage && (
         <div>

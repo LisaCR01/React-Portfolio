@@ -45,6 +45,19 @@ SO THAT I can assess whether they're a good candidate for an open position
 
 ### Screenshot of Application
 
+#### About Me Section Screenshot
+![About Me Section](./Assets/Images/About-Me.png?raw=true)
+
+#### Contact Section Screenshot
+![Contact Section](./Assets/Images/Contact.png?raw=true)
+
+#### Portfolio Section Screenshot
+![Portfolio Section](./Assets/Images/Portfolio.png?raw=true)
+
+#### Resume Section Screenshot
+![Resume Section](./Assets/Images/Resume.png?raw=true)
+
+
 ## Contact Information
 - [Email](mailto:lcrgunn@gmail.com)
 - [Github](https://github.com/LisaCR01)

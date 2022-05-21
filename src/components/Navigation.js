@@ -1,5 +1,9 @@
 import React from 'react';
 import './Navigation.css';
+import { BsFillPersonFill } from "react-icons/bs";
+import { BsSymmetryHorizontal } from "react-icons/bs";
+import {BsFillImageFill} from "react-icons/bs"
+import {BsFillFileEarmarkTextFill} from "react-icons/bs"
 
 // Here we are using object destructuring assignment to pluck off our variables from the props object
 // We assign them to their own variable names
@@ -18,7 +22,7 @@ function Navigation({ currentPage, handlePageChange }) {
           // If it is, we set the current page to 'nav-link-active', otherwise we set it to 'nav-link'
           className= {currentPage === 'AboutMe' ? 'nav-link active text-white' : 'nav-link text-muted'}
         >
-          About Me
+          About Me <BsFillPersonFill size={30}/>
         </a>
       </li>
       <li className=" nav-item px-4 fw-bold fs-4 nav-link">
@@ -26,9 +30,9 @@ function Navigation({ currentPage, handlePageChange }) {
           href="#Contact"
           onClick={() => handlePageChange('Contact')}
           // Check to see if the currentPage is `Contact`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
-          className= {currentPage === 'Contact' ? 'nav-link active text-white' : 'nav-link text-muted'}
+          className= {currentPage === 'Contact' ? 'nav-link active text-white ' : 'nav-link text-muted '}
         >
-          Contact Me
+          Contact <BsSymmetryHorizontal size={30}/>
         </a>
       </li>
       <li className="nav-item px-4 fw-bold fs-4 nav-link">
@@ -38,7 +42,7 @@ function Navigation({ currentPage, handlePageChange }) {
           // Check to see if the currentPage is `Portfolio`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
           className= {currentPage === 'Portfolio' ? 'nav-link active text-white' : 'nav-link text-muted'}
         >
-          Portfolio
+          Portfolio <BsFillImageFill size={30}/>
         </a>
       </li>
       <li className=" nav-item px-4 fw-bold fs-4 nav-link">
@@ -48,7 +52,7 @@ function Navigation({ currentPage, handlePageChange }) {
           // Check to see if the currentPage is `Resume`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
           className= { currentPage === 'Resume' ? 'nav-link active text-white' : 'nav-link text-muted'}
         >
-          Resume
+          Resume <BsFillFileEarmarkTextFill size={30}/>
         </a>
       </li>
     </ul>

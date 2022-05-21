@@ -10,7 +10,19 @@ function Form() {
   const [userName, setUserName] = useState('');
   const [message, setMessage] = useState('')
   const [errorMessage, setErrorMessage] = useState('');
-
+  const [showText, setShowText] = useState(false)
+  const handleMouseEnter = e => {
+    e.target.style.background = "grey"
+    
+    setShowText(true)}
+    const handleMouseLeave = e => {
+        if(e.target.value== ''){
+        setErrorMessage('Please fill in the fields');
+        setShowText(false)
+        }else {setErrorMessage('ok')}
+    //   e.target.style.background = "maroon"
+    //   setShowText(false)
+    }
   const handleInputChange = (e) => {
     // Getting the value and name of the input which triggered the change
     const { target } = e;
@@ -38,13 +50,6 @@ function Form() {
       return;
       // Then we check to see if the password is not valid. If so, we set an error message regarding the password.
     }
-    if (email == null  || userName == null || message == null ) {
-        setErrorMessage('Please enter the fields');
-        return; 
-      }
-
-    
-    
 
     // If everything goes according to plan, we want to clear out the input after a successful registration.
     setUserName('');
@@ -64,6 +69,8 @@ function Form() {
                 value={email}
                 name="email"
                 onChange={handleInputChange}
+                onMouseEnter={handleMouseEnter}
+                onMouseLeave={handleMouseLeave}
                 type="email"
                 placeholder="email"
                 id="exampleFormControlInput1"
@@ -76,6 +83,8 @@ function Form() {
                 value={userName}
                 name="userName"
                 onChange={handleInputChange}
+                onMouseEnter={handleMouseEnter}
+                onMouseLeave={handleMouseLeave}
                 type="text"
                 placeholder="username"
                 id="exampleFormControlInput2"
@@ -89,6 +98,8 @@ function Form() {
                 value={message}
                 name="message"
                 onChange={handleInputChange}
+                onMouseEnter={handleMouseEnter}
+                onMouseLeave={handleMouseLeave}
                 type="message"
                 placeholder="message"
                 id="exampleFormControlTextarea1"
@@ -96,6 +107,7 @@ function Form() {
              />
         </div>
         <button className="btn btn-secondary my-3 fs-4 shadow-lg" type="button" onClick={handleFormSubmit}>Submit</button>
+        <div id="incomplete"></div>
       </form>
       {errorMessage && (
         <div>
